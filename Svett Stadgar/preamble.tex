@@ -1,0 +1,55 @@
+% Language and typography
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[swedish]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% Page layout
+\usepackage[a4paper,left=25mm,right=25mm,top=25mm,bottom=25mm,headheight=15pt,footskip=38pt]{geometry}
+\usepackage{setspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\onehalfspacing
+
+% Headers, lists, and headings
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\titleformat{\section}{\normalfont\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{}{0pt}{}
+\setcounter{secnumdepth}{0}
+\setlist[itemize]{leftmargin=2em,label={}}
+\setlist[enumerate]{leftmargin=2em}
+
+% Links
+\usepackage[hidelinks]{hyperref}
+
+% Running matter
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Smash Vänners Engagemang i Törstiga Turneringars stadgar}
+\fancyhead[R]{Fastställda: 202?-??-??}
+\fancyfoot[C]{%
+	\scriptsize
+	\begin{minipage}[t]{0.26\textwidth}
+		Datasektionen\\
+		vid Luleå Tekniska Universitet\\
+		971 87 Luleå
+	\end{minipage}\hfill%
+	\begin{minipage}[t]{0.18\textwidth}
+		Tel nr:\\
+		0920 - 49 25 80
+	\end{minipage}\hfill%
+	\begin{minipage}[t]{0.29\textwidth}
+		Organisationsnummer:\\
+		802491-6598
+	\end{minipage}\hfill%
+	\begin{minipage}[t]{0.25\textwidth}
+		Hemsida:\\
+		www.datasektionen.com
+	\end{minipage}%
+}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
